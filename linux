@@ -93,7 +93,8 @@ fancy_echo "Installing node, to render the rails asset pipeline ..."
 ### end linux-components/debian-derivative-packages
 
 fancy_echo "Changing your shell to zsh ..."
-  chsh -s $(which zsh)
+  # for cloud9 not to error out
+  sudo chsh -s $(which zsh)
 ### end common-components/zsh
 
 silver_searcher_from_source() {
